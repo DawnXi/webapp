@@ -1,0 +1,150 @@
+/*restet*/
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+ 
+input[type="reset"],
+ 
+input[type="button"],
+ 
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {
+max-width: 100%;
+height: auto;
+width:auto\9; /* ie8 */
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{margin:0; padding:0; border:none;}
+body{font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;}
+em,i{font-style:normal;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#969696; font-family: '宋体',Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{color:#fff; text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
+img{border: none;}
+/*rem字体大小设置*/
+html{
+  font-size:62.5%; 
+}
+
+
+/*基础css*/
+body{
+	background-color: #000;
+}
+body div{
+	background-color: #1a263e;
+}
+.block-button {
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 40px;
+	background-color: red;
+	margin:0.4rem;
+	border-radius: 5px;
+}
+.block-button-radius{
+	border-radius: 50px;
+}
+.inline-button{
+	display: block;
+	color: #fff;
+	padding: 0.1rem 0.2rem;
+	border: red solid 1px;
+	border-radius: 0.3rem;
+}
+
+.br-top{
+	border-top: red solid 1px;
+}
+
+.panel .header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.2rem;
+    line-height: 1rem;
+    border-top: red solid 1px;
+}
+
+
+/*底部导航*/
+.navigation-tab {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.25rem 0.45rem;
+    border-top: red solid 1px;
+}
+
+a.navigation-tab-item img {
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.1rem;
+}
+
+a.navigation-tab-item {
+    display: block;
+    text-align: center;
+    font-size: 0.2rem;
+}
+
+
+/*注册页面*/
+.main {
+    background-color: #1a263e;
+    height: 100%;
+    color: #cacaca;
+}
+
+.form {
+    padding: 0.1rem 0.3rem;
+    line-height: 40px;
+}
+
+.form-item {
+    border-bottom: #8a8888 solid 1px;
+    line-height: 60px;
+}
+
+.form-item input {
+   border: none;
+    background: no-repeat;
+    text-indent: 2rem;
+    line-height: 60px;
+    width: 80%;
+    outline: none;
+}
+
+.form-item .send-msg {
+    float: right;
+    margin-right: 10px;
+}
+
+.agreement p {
+    text-align: center;
+    margin: 0.8rem 0;
+}
+

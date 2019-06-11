@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*新闻列表*/
+.news.br-top {
+    padding: 0.3rem;
+}
+
+.news.br-top img {
+    display: block;
+    width: 45%;
+    height: 100px;
+    float: left;
+}
+
+.news.br-top .content {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.news.br-top .right {
+    /* float: left; */
+    width: 100%;
+}
+
+.news.br-top a {
+    display: block;
+    overflow: hidden;
+}
+
+.news.br-top .time {
+    width: 100%;
+    text-align: right;
+}
+
