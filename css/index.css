@@ -34,3 +34,21 @@
     text-align: right;
 }
 
+
+
+
+.btn-nav {
+    padding: 0 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+a.btn-nav-item {
+    display: block;
+    width: 74%;
+    text-align: center;
+}
+a.btn-nav-item span {
+    display: block;
+}
