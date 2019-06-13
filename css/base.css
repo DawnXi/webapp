@@ -55,13 +55,13 @@ body div{
 }
 .block-button {
 	display: block;
-	color: #fff;
-	text-align: center;
-	font-size: 0.8rem;
-	line-height: 40px;
-	background-color: red;
-	margin:0.4rem;
-	border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.35rem;
+    line-height: 1.1rem;
+    background-color: #4194f0;
+    margin: 0.35rem;
+    border-radius: 5px;
 }
 .block-button-radius{
 	border-radius: 50px;
@@ -123,18 +123,23 @@ a.navigation-tab-item {
     padding: 0.1rem 0.3rem;
     line-height: 40px;
 }
+.form-box.order .form-item{
+    width: 30%;
+    display: inline-block;
+}
 
 .form-item {
     border-bottom: #8a8888 solid 1px;
     line-height: 60px;
+    color: #fff;
+    padding: 0 0.3rem;
 }
 
 .form-item input {
-   border: none;
+    border: none;
     background: no-repeat;
-    text-indent: 2rem;
     line-height: 60px;
-    width: 75%;
+    width: 65%;
     outline: none;
 }
 
@@ -210,5 +215,28 @@ a.navigation-tab-item {
 .button-tab {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    color: #999;
+    font-size: 0.3rem;
+    padding: 10px 0.3rem;
+    border-bottom: red solid 1px;
 }
 
+.button-tab:last-child{
+    border-bottom: none;
+}
+.button-tab.text p {
+    font-size: 0.3rem;
+    color: #fff;
+}
+.button-tab p.small{
+    font-size: 0.2rem;
+    text-align: center;
+    color: #999;
+}
+.button-tab.text .p1{
+    color: blue;
+}
+.button-tab.text .p3{
+    color: green;
+}
