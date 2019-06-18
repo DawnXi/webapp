@@ -7,8 +7,9 @@
 .news.br-top img {
     display: block;
     width: 45%;
-    height: 100px;
+    height: 90px;
     float: left;
+    margin-right: 0.2rem;
 }
 
 .news.br-top .content {
