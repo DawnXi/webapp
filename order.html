@@ -1,77 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>订单</title>
-	<link rel="stylesheet" href="./css/base.css">
+    <meta charset="UTF-8">
+    <title>订单</title>
+    <link rel="stylesheet" href="./css/base.css">
 </head>
+
 <body>
-	<div class="page-header">
-		<div class="left back-page" onClick="javascript :history.back(-1);"><img src="./images/back.png" alt=""></div>
-		<span>我的订单</span>
-	</div>
-	<div class="button-tab">
-		<div class="item">
-			<img src="./images/btn_10.png" alt="">
-			<p>买入</p>
-		</div>
-		<div class="item">
-			<img src="./images/btn_11.png" alt="">
-			<p>预约</p>
-		</div>
-		<div class="item">
-			<img src="./images/btn_12.png" alt="">
-			<p>卖出</p>
-		</div>
-	</div>
-	<div class="form-box order">
-		<div class="form-item">
-			<span>排单币数量</span>
-			<input type="text" placeholder="请输入您需要购买的数量">
-		</div>
-		<div class="form-item">
-			<span>选择分区</span>
-			<label><input type="radio" name="test"/>新手区</label>
-			<label><input type="radio" name="test"/>资深区</label>
-		</div>
-		<div class="form-item">
-			<span>派单金额</span>
-			<span>2000RMB</span>
-		</div>
-	</div>
-	<div class="block-button">买入提交</div>
-
-	<div class="panel-title">
-			<div class="left">
-				<i class="icon"></i>
-				<span>推荐订单</span>
-			</div>
-			<div class="right">
-				<span>更多></span>
-			</div>
-		</div>
-
-	<div class="info-card">
-		<div class="info-line small">
-			<span class="left">名称：1324561654865</span>
-			<span class="left">日期：2019-06-20</span>
-		</div>
-	</div>
-	<div class="button-tab text">
-		<div class="item">
-			<p class="p1">10000</p>
-			<p class="small">金额（RMB）</p>
-		</div>
-		<div class="item">
-			<p class="p2">排队中</p>
-			<p class="small">状态</p>
-		</div>
-		<div class="item">
-			<p class="p3">买日申请</p>
-			<p class="small">确认状态</p>
-		</div>
-	</div>
-	<div class="block-button">此单买入成功</div>
-	<script src="./js/rem.js"></script>
+    <div class="page-header">
+        <div class="left back-page" onClick="javascript :history.back(-1);"><img src="./images/back.png" alt=""></div>
+        <span>我的订单</span>
+    </div>
+    <div class="button-tab">
+        <div class="item buy">
+            <img src="./images/btn_10.png" alt="">
+            <p>买入</p>
+        </div>
+        <div class="item subscribe">
+            <img src="./images/btn_11.png" alt="">
+            <p>预约</p>
+        </div>
+        <div class="item sell">
+            <img src="./images/btn_12.png" alt="">
+            <p>卖出</p>
+        </div>
+    </div>
+    <div class="block-button">买入提交</div>
+    <!-- 买入订单展开 -->
+    <div class="model model-container-bg"></div>
+     <div class="model-body" id="buy-order">
+        <div class="model-title">
+            <span>买入红酒</span>
+            <i class="iconfont close-model" class="">关闭</i>
+        </div>
+        <div class="model-content">
+            <div class="order-content">
+                <div class="options goods">
+                    <input type="number" id="buyin_num" placeholder="金额"><span class="wine"></span>X<span class="winnum">0</span>
+                    <img class="goods-img" src="./images/spread_link.png" alt="">
+                </div>
+                <div class="des">
+                    <p>金额必须是1000的整数倍</p>
+                    <p>您当前的排单下限是 5000 元，上限是 5000元。</p>
+                    <p>排单每1000元消耗1个手续费，您当前拥有手续费数量：85.00。</p>
+                </div>
+            </div>
+            <div class="model-foot">
+                <div class="inline-button">提交</div>
+                <div class="inline-button">取消</div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+    <!-- 预约订单展开 -->
+    <div class="model-body" id="subscribe-order">
+        <div class="model-title">
+            <span>温馨提示</span>
+            <i class="iconfont close-model">关闭</i>
+        </div>
+        <div class="model-content">
+            <div class="order-status">
+                <span>是否开启自动预约排单：</span>
+                <input type="text">
+            </div>
+            <p>开启后每隔指定天数系统会自动为您排单，请确保账户中的手续费充足。</p>
+            <div class="order-options">
+                <select name="" id="">
+                    <option value="5">5天一单</option>
+                    <option value="6">6天一单</option>
+                    <option value="7">7天一单</opion>
+                </select>
+                <input type="text">
+                <div class="btn-inline">修改</div>
+                
+            </div>
+            <div class="simple-table">
+                    <div class="table-header">
+                        <div>预约日期</div>
+                        <div>预约金额</div>
+                        <div>状态</div>
+                    </div>
+                    <div class="table-line">
+                        <div>2019-06-10</div>
+                        <div>5000</div>
+                        <div>已成功挂单</div>
+                    </div>
+                    <div class="table-line">
+                        <div>2019-06-10</div>
+                        <div>5000</div>
+                        <div>等待执行</div>
+                    </div>
+                    <div class="table-line">
+                        <div>2019-06-10</div>
+                        <div>5000</div>
+                        <div>等待执行</div>
+                    </div>
+                </div>
+        </div>
+        <div class="model-foot">
+            <div class="inline-button">关闭</div>
+        </div>
+    </div>
+    <!-- 卖出订单展开 -->
+    <div class="model-body" id="sell-order">
+        <div class="model-title">
+            <span>卖出红酒</span>
+            <i class="iconfont close-model">关闭</i>
+        </div>
+        <div class="model-content">
+            <p>银行卡：</p>
+            <select name="bankcard" id="bankcard">
+                <option name="bankcard" value="12324334343433433">北京银行(12324334343433433)</option>
+            </select>
+            <p>提现账户：</p>
+            <select name="selltype" id="selltype">
+                <option name="selltype" value="0">本息账户</option>
+                <option name="selltype" value="1">奖励账户</option>
+            </select>
+            <input type="text" placeholder="最多可提现金额878510.00元">
+        </div>
+        <div class="model-foot">
+            <div class="inline-button">提交</div>
+            <div class="inline-button">取消</div>
+        </div>
+    </div>
+    <div class="panel-title">
+        <div class="left">
+            <i class="icon"></i>
+            <span>推荐订单</span>
+        </div>
+        <div class="right">
+            <span>更多></span>
+        </div>
+    </div>
+    <div class="info-card">
+        <div class="info-line small">
+            <span class="left">名称：1324561654865</span>
+            <span class="left">日期：2019-06-20</span>
+        </div>
+    </div>
+    <div class="button-tab text">
+        <div class="item">
+            <p class="p1">10000</p>
+            <p class="small">金额（RMB）</p>
+        </div>
+        <div class="item">
+            <p class="p2">排队中</p>
+            <p class="small">状态</p>
+        </div>
+        <div class="item">
+            <p class="p3">买日申请</p>
+            <p class="small">确认状态</p>
+        </div>
+    </div>
+    <div class="block-button">此单买入成功</div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/base.js"></script>
 </body>
+
 </html>
