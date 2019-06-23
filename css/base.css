@@ -40,6 +40,11 @@ a:hover{color:#fff; text-decoration:none;}
 ul,ol{list-style:none;}
 h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
 img{border: none;}
+/*清除outline*/
+input,button,select{
+    outline: none;
+}
+
 /*rem字体大小设置*/
 html{
   font-size:62.5%; 
@@ -49,6 +54,7 @@ body{
     max-width: 750px;
     margin: 0 auto;
 }
+
 
 /*修改chckbox,radio样式*/
 .agreement label { /*flex布局让子元素水平垂直居中*/
@@ -209,6 +215,12 @@ body>div{
 
 
 /*弹出层*/
+
+/*弹出时禁止页面滚动*/
+body.lock,html.lock{
+    overflow: hidden;
+}
+
 .model{
     display: none;
 }
@@ -435,18 +447,19 @@ img.form-icon {
 
 
 .panel {
-    color: #fff;
+    color: #999;
+    font-size: 0.3rem;
 }
 
 .panel-title {
     display: flex;
     justify-content: space-between;
     padding: 0 0.3rem;
-    line-height: 30px;
-    font-size: 0.25rem;
+    line-height: 1rem;
+    font-size: 0.35rem;
     color: #999;
     border-bottom: #3d93fe solid 1px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .panel-body-title {
@@ -614,7 +627,10 @@ img.form-icon {
 table.table {
     font-size: 0.08rem;
     color: #fff;
+    background: #1a263e;
     border-collapse: collapse;
+    margin: 0.1rem;
+    margin-top: 0.3rem;
 }
 
 tr, th,td {
@@ -633,4 +649,51 @@ table.table td {
 
 .page-item.active {
     display: block;
+    background: #000;
+}
+
+/*文字颜色*/
+.txt-white{
+    color: white;
+}
+.txt-red{
+    color: red;
+}
+.txt-green{
+    color: green;
+}
+.txt-blue{
+    color: #4194f0;
+}
+
+
+/*面板标题图标*/
+i.icon{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    vertical-align: text-top;
+}
+.icon.interest{
+    background: url(../images/interest.png) no-repeat;
+    background-size: contain;
+}
+.icon.reward{
+    background: url(../images/reward.png) no-repeat;
+    background-size: contain;
+}
+.icon.recommend{
+    background: url(../images/recommend.png) no-repeat;
+    background-size: contain;
+}
+
+/*我的账户调整*/
+.page-list .form {
+    background: #1a263e;
+    margin-top: 0.3rem;
+}
+
+.page-info {
+    background: #1a263e;
+    margin-top: 0.3rem;
 }

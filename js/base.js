@@ -11,7 +11,15 @@ $(function(){
 	$('.page-tab .item').click(function(){
 		$('.page-tab .item').removeClass('active');
 		$(this).addClass('active');
+		$('.page-list .page-item').removeClass('active');
+		$('.page-list .page-item').eq($(this).index()).addClass('active');
 	});
+
+
+	// 禁止页面滚动
+	function forbidScroll() {
+	   $('body,html').toggleClass('lock');
+	}
 
 
 	// 控制弹出框显示
@@ -19,12 +27,14 @@ $(function(){
 	$('.model-container-bg,.close-model').click(function () {
 		$('.model-body').hide();
 		$('.model-container-bg').hide();
+		forbidScroll();
 	})
 
 	//点击查看推广链接
 	$('.top-tip.text').click(function(){
 		$('.model-container-bg').show();
 		$('#tip').show();
+		forbidScroll();
 	});
 
 
@@ -32,6 +42,7 @@ $(function(){
 	$('.top-tip.spread_link').click(function(){
 		$('.model-container-bg').show();
 		$('#spread-link').show();
+		forbidScroll();
 	});
 
 	
@@ -42,17 +53,20 @@ $(function(){
 		$('.model-container-bg').show();
 		$('.model-body').hide();
 		$('#buy-order').show();
+		forbidScroll();
 	});
 
 	$('.subscribe').click(function(){
 		$('.model-container-bg').show();
 		$('.model-body').hide();
 		$('#subscribe-order').show();
+		forbidScroll();
 	});
 
 	$('.sell').click(function(){
 		$('.model-container-bg').show();
 		$('.model-body').hide();
 		$('#sell-order').show();	
+		forbidScroll();
 	})
 });

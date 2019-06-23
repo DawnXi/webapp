@@ -5,37 +5,242 @@
     <meta charset="UTF-8">
     <title>订单</title>
     <link rel="stylesheet" href="./css/base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
 </head>
 
-<body>
+<body style="font-size: 16px;">
     <div class="page-header">
-        <div class="left back-page" onClick="javascript :history.back(-1);"><img src="./images/back.png" alt=""></div>
+        <div class="left back-page" onclick="javascript :history.back(-1);"><img src="./images/back.png" alt=""></div>
         <span>我的账户</span>
     </div>
     <div class="page-tab">
-        <div class="item active">
+        <div class="item">
             <span>预约积分</span>
             <span>{:C('pdm_name')}</span>
-
         </div>
         <div class="item">
             <span>激活积分</span>
             <span>{:C('jhm_name')}</span>
         </div>
-        <div class="item">
+        <div class="item active">
             <span>诚信积分</span>
             <span>{:C('jifen_wallet_name')}</span>
         </div>
     </div>
     <div class="page-list">
+        <div class="page-item">
+            <div class="form">
+                <div class="form-item">
+                    <img src="./images/yqr.png" alt="" class="form-icon">
+                    <input type="text" placeholder="对方账号或手机号">
+                </div>
+                <div class="form-item">
+                    <img src="./images/agent.png" alt="" class="form-icon">
+                    <input type="text" placeholder="数量">
+                </div>
+                <div class="block-button">提交</div>
+            </div>
+            <div class="page-info">
+                <div class="page-tab-title">当前预约积分余额：898.00</div>
+                <div class="panel-title">
+                    <div class="left">
+                        <i class="icon recommend"></i>
+                        <span>预约积分消费记录</span>
+                    </div>
+                </div>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>编号</th>
+                        <th>日期</th>
+                        <th>类型</th>
+                        <th>数量</th>
+                        <th>余额</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>2019-06-17 16:14:15</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>898.00</td>
+                        <td>激活用户12324118118</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>2019-06-17 16:07:00</td>
+                        <td>
+                            转出 </td>
+                        <td>-100.00</td>
+                        <td>899.00</td>
+                        <td>转出到用户13333333388</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>2019-06-09 20:19:28</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>999.00</td>
+                        <td>激活用户13888888888</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>2019-05-21 21:04:28</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>1000.00</td>
+                        <td>激活用户13888888888</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>2019-04-21 19:34:07</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>1001.00</td>
+                        <td>激活用户huadong</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>2019-04-21 19:32:06</td>
+                        <td>
+                            充值 </td>
+                        <td>1000.00</td>
+                        <td>1002.00</td>
+                        <td>充值买入</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2019-04-17 15:29:58</td>
+                        <td>
+                            转出 </td>
+                        <td>-2.00</td>
+                        <td>2.00</td>
+                        <td>转出到用户x1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2019-04-17 15:29:05</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>4.00</td>
+                        <td>激活用户x1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-item">
+            <div class="form">
+                <div class="form-item">
+                    <img src="./images/yqr.png" alt="" class="form-icon">
+                    <input type="text" placeholder="对方账号或手机号">
+                </div>
+                <div class="form-item">
+                    <img src="./images/agent.png" alt="" class="form-icon">
+                    <input type="text" placeholder="数量">
+                </div>
+                <div class="block-button">提交</div>
+            </div>
+            <div class="page-info">
+                <div class="page-tab-title">当前激活积分余额：898.00</div>
+                <div class="panel-title">
+                    <div class="left">
+                        <i class="icon recommend"></i>
+                        <span>激活积分消费记录</span>
+                    </div>
+                </div>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>编号</th>
+                        <th>日期</th>
+                        <th>类型</th>
+                        <th>数量</th>
+                        <th>余额</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>2019-06-17 16:14:15</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>898.00</td>
+                        <td>激活用户12324118118</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>2019-06-17 16:07:00</td>
+                        <td>
+                            转出 </td>
+                        <td>-100.00</td>
+                        <td>899.00</td>
+                        <td>转出到用户13333333388</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>2019-06-09 20:19:28</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>999.00</td>
+                        <td>激活用户13888888888</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>2019-05-21 21:04:28</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>1000.00</td>
+                        <td>激活用户13888888888</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>2019-04-21 19:34:07</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>1001.00</td>
+                        <td>激活用户huadong</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>2019-04-21 19:32:06</td>
+                        <td>
+                            充值 </td>
+                        <td>1000.00</td>
+                        <td>1002.00</td>
+                        <td>充值买入</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2019-04-17 15:29:58</td>
+                        <td>
+                            转出 </td>
+                        <td>-2.00</td>
+                        <td>2.00</td>
+                        <td>转出到用户x1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2019-04-17 15:29:05</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>4.00</td>
+                        <td>激活用户x1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="page-item active">
-            <div class="panel-title">
-                <div class="left">
-                    <i class="icon"></i>
-                    <span>预约积分消费记录</span>
-                </div>
-            </div>
-            <div class="page-tab-title">当前预约积分余额：898.00</div>
             <div class="form">
                 <div class="form-item">
                     <img src="./images/yqr.png" alt="" class="form-icon">
@@ -45,200 +250,101 @@
                     <img src="./images/agent.png" alt="" class="form-icon">
                     <input type="text" placeholder="数量">
                 </div>
+                <div class="block-button">提交</div>
             </div>
-            <div class="block-button">提交</div>
-
-
-
-
-
-
-            <table class="table"> 
-        <tbody>
-         <tr> 
-          <th>编号</th>
-          <th>日期</th>
-          <th>类型</th>
-          <th>数量</th>
-		  <th>余额</th>
-          <th>说明</th>
-         </tr>
-		 <tr>
-          <td>31</td>
-          <td>2019-06-18 21:36:10</td>
-          <td>
-		      		      排单			  			  		  </td>
-		  <td>-5.00</td>
-		  <td>85.00</td>
-		  <td>排单消耗ID:P15608649708e</td>
-         </tr><tr>
-          <td>19</td>
-          <td>2019-06-17 17:17:30</td>
-          <td>
-		      转出		      			  			  		  </td>
-		  <td>-1000.00</td>
-		  <td>90.00</td>
-		  <td>转出到用户12324118118</td>
-         </tr><tr>
-          <td>18</td>
-          <td>2019-06-17 15:32:20</td>
-          <td>
-		      		      排单			  			  		  </td>
-		  <td>-5.00</td>
-		  <td>1090.00</td>
-		  <td>排单消耗ID:P156075674074</td>
-         </tr><tr>
-          <td>17</td>
-          <td>2019-06-10 17:38:21</td>
-          <td>
-		      		      排单			  			  		  </td>
-		  <td>-5.00</td>
-		  <td>1095.00</td>
-		  <td>排单消耗:P1560159501e2</td>
-         </tr><tr>
-          <td>16</td>
-          <td>2019-06-09 20:12:38</td>
-          <td>
-		      		      			  			  充值		  </td>
-		  <td>20.00</td>
-		  <td>1100.00</td>
-		  <td>充值买入</td>
-         </tr><tr>
-          <td>4</td>
-          <td>2019-05-31 00:01:58</td>
-          <td>
-		      		      排单			  			  		  </td>
-		  <td>-3.00</td>
-		  <td>1080.00</td>
-		  <td>排单消耗ID:P1559232118ff</td>
-         </tr><tr>
-          <td>3</td>
-          <td>2019-05-28 12:17:14</td>
-          <td>
-		      		      排单			  			  		  </td>
-		  <td>-1.00</td>
-		  <td>1083.00</td>
-		  <td>排单消耗ID:P1559017034cb</td>
-         </tr><tr>
-          <td>2</td>
-          <td>2019-05-20 01:39:45</td>
-          <td>
-		      		      排单			  			  		  </td>
-		  <td>-1.00</td>
-		  <td>1084.00</td>
-		  <td>排单消耗ID:P155828758519</td>
-         </tr><tr>
-          <td>1</td>
-          <td>2019-04-23 00:11:41</td>
-          <td>
-		      		      排单			  			  		  </td>
-		  <td>-1.00</td>
-		  <td>1085.00</td>
-		  <td>排单消耗ID:P1555949501de</td>
-         </tr>        </tbody>
-       </table>
-        </div>
-        <div class="page-item">
-            <div class="panel-title">
-                <div class="left">
-                    <i class="icon"></i>
-                    <span>激活积分消费记录</span>
+            <div class="page-info">
+                <div class="page-tab-title">当前诚信积分余额：898.00</div>
+                <div class="panel-title">
+                    <div class="left">
+                        <i class="icon recommend"></i>
+                        <span>诚信消费记录</span>
+                    </div>
                 </div>
             </div>
-            <div class="page-tab-title">当前激活积分余额：898.00</div>
-            <div class="form">
-                <div class="form-item">
-                    <img src="./images/yqr.png" alt="" class="form-icon">
-                    <input type="text" placeholder="对方账号或手机号">
-                </div>
-                <div class="form-item">
-                    <img src="./images/agent.png" alt="" class="form-icon">
-                    <input type="text" placeholder="数量">
-                </div>
-            </div>
-            <div class="block-button">提交</div>
-
-
-
-            <table class="table"> 
-        <tbody>
-         <tr> 
-          <th>编号</th>
-          <th>日期</th>
-          <th>类型</th>
-          <th>数量</th>
-		  <th>余额</th>
-          <th>说明</th>
-         </tr>
-		 <tr>
-          <td>26</td>
-          <td>2019-06-17 16:14:15</td>
-          <td>
-		      			  			  			  			  激活			  		  </td>
-		  <td>-1.00</td>
-		  <td>898.00</td>
-		  <td>激活用户12324118118</td>
-         </tr><tr>
-          <td>24</td>
-          <td>2019-06-17 16:07:00</td>
-          <td>
-		      转出			  			  			  			  			  		  </td>
-		  <td>-100.00</td>
-		  <td>899.00</td>
-		  <td>转出到用户13333333388</td>
-         </tr><tr>
-          <td>23</td>
-          <td>2019-06-09 20:19:28</td>
-          <td>
-		      			  			  			  			  激活			  		  </td>
-		  <td>-1.00</td>
-		  <td>999.00</td>
-		  <td>激活用户13888888888</td>
-         </tr><tr>
-          <td>22</td>
-          <td>2019-05-21 21:04:28</td>
-          <td>
-		      			  			  			  			  激活			  		  </td>
-		  <td>-1.00</td>
-		  <td>1000.00</td>
-		  <td>激活用户13888888888</td>
-         </tr><tr>
-          <td>21</td>
-          <td>2019-04-21 19:34:07</td>
-          <td>
-		      			  			  			  			  激活			  		  </td>
-		  <td>-1.00</td>
-		  <td>1001.00</td>
-		  <td>激活用户huadong</td>
-         </tr><tr>
-          <td>20</td>
-          <td>2019-04-21 19:32:06</td>
-          <td>
-		      			  			  充值			  			  			  		  </td>
-		  <td>1000.00</td>
-		  <td>1002.00</td>
-		  <td>充值买入</td>
-         </tr><tr>
-          <td>2</td>
-          <td>2019-04-17 15:29:58</td>
-          <td>
-		      转出			  			  			  			  			  		  </td>
-		  <td>-2.00</td>
-		  <td>2.00</td>
-		  <td>转出到用户x1</td>
-         </tr><tr>
-          <td>1</td>
-          <td>2019-04-17 15:29:05</td>
-          <td>
-		      			  			  			  			  激活			  		  </td>
-		  <td>-1.00</td>
-		  <td>4.00</td>
-		  <td>激活用户x1</td>
-         </tr>        </tbody>
-       </table>
-        </div>
-        <div class="page-item">
-            <div class="page-tab-title">当前诚信积分余额：898.00</div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>编号</th>
+                        <th>日期</th>
+                        <th>类型</th>
+                        <th>数量</th>
+                        <th>余额</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>2019-06-17 16:14:15</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>898.00</td>
+                        <td>激活用户12324118118</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>2019-06-17 16:07:00</td>
+                        <td>
+                            转出 </td>
+                        <td>-100.00</td>
+                        <td>899.00</td>
+                        <td>转出到用户13333333388</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>2019-06-09 20:19:28</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>999.00</td>
+                        <td>激活用户13888888888</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>2019-05-21 21:04:28</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>1000.00</td>
+                        <td>激活用户13888888888</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>2019-04-21 19:34:07</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>1001.00</td>
+                        <td>激活用户huadong</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>2019-04-21 19:32:06</td>
+                        <td>
+                            充值 </td>
+                        <td>1000.00</td>
+                        <td>1002.00</td>
+                        <td>充值买入</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2019-04-17 15:29:58</td>
+                        <td>
+                            转出 </td>
+                        <td>-2.00</td>
+                        <td>2.00</td>
+                        <td>转出到用户x1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2019-04-17 15:29:05</td>
+                        <td>
+                            激活 </td>
+                        <td>-1.00</td>
+                        <td>4.00</td>
+                        <td>激活用户x1</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="./js/jquery.min.js"></script>
